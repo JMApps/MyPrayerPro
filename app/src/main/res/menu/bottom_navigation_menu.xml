@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_chapters"
+        android:title="Омовение" />
+    <item
+        android:id="@+id/bottom_nav_favorite_chapters"
+        android:title="Молитва" />
+    <item
+        android:id="@+id/bottom_nav_favorite_supplications"
+        android:title="Азкары" />
+
+</menu>
