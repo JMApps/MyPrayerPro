@@ -15,6 +15,10 @@ class AblutionActivity : AppCompatActivity() {
 
         val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
+
+        val ablutionSectionPagerAdapter = AblutionSectionPagerAdapter(supportFragmentManager)
+        ablutionViewPager.adapter = ablutionSectionPagerAdapter
+        ablutionIndicator.setViewPager(ablutionViewPager)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
