@@ -29,9 +29,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name=".ui.ablution.AblutionActivity"
+            android:label="@string/ablution_name"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
-
 </manifest>
