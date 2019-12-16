@@ -7,17 +7,14 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import jmapps.myprayerpro.ui.adapter.MainSectionPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
     BottomNavigationView.OnNavigationItemSelectedListener {
-
-    private lateinit var fragmentTransaction: FragmentTransaction
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,10 +28,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.string.navigation_drawer_close
         )
 
+        val mainSectionPagerAdapter = MainSectionPagerAdapter(supportFragmentManager)
+        mainViewPager.adapter = mainSectionPagerAdapter
+        mainIndicator.setViewPager(mainViewPager)
+
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
         navigationViewMain.setNavigationItemSelectedListener(this)
-        bottomNavigationMain.setOnNavigationItemSelectedListener(this)
     }
 
     override fun onBackPressed() {
@@ -55,11 +55,5 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
-    }
-
-    fun replaceFragment(fragment: Fragment) {
-        fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.mainFragmentContainer, fragment)
-        fragmentTransaction.commit()
     }
 }
