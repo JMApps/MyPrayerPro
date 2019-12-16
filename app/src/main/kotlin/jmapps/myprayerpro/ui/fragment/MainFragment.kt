@@ -10,6 +10,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import jmapps.myprayerpro.R
 import jmapps.myprayerpro.ui.ablution.AblutionActivity
+import jmapps.myprayerpro.ui.prayer.PrayerActivity
+import jmapps.myprayerpro.ui.supplication.SupplicationActivity
 import jmapps.myprayerpro.ui.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.fragment_main.*
 import kotlinx.android.synthetic.main.fragment_main.view.*
@@ -67,11 +69,13 @@ class MainFragment : Fragment(), View.OnClickListener {
             }
 
             2 -> {
-
+                val toPrayer = Intent(context, PrayerActivity::class.java)
+                context?.startActivity(toPrayer)
             }
 
             3 -> {
-
+                val toSupplication = Intent(context, SupplicationActivity::class.java)
+                context?.startActivity(toSupplication)
             }
         }
     }
