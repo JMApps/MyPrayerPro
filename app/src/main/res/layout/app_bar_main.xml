@@ -19,26 +19,4 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.appcompat.widget.ContentFrameLayout
-        android:id="@+id/mainFragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".presentation.ui.mainScreen.MainActivity"
-        tools:showIn="@layout/app_bar_main" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@color/bottomViewColor"
-        android:elevation="5dp"
-        android:scrollbars="vertical"
-        app:itemIconSize="30dp"
-        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
-        app:menu="@menu/bottom_navigation_menu"
-        tools:context=".presentation.ui.mainScreen.MainActivity"
-        tools:showIn="@layout/app_bar_main" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
