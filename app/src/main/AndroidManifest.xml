@@ -25,12 +25,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FirstActivity"
+            android:name=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".ui.ablution.AblutionActivity"
-            android:label="@string/ablution_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.supplication.SupplicationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.prayer.PrayerActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 </manifest>
