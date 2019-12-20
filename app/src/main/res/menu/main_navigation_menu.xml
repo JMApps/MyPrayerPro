@@ -6,23 +6,28 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_tools"
-            android:title="Настройки" />
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_settings" />
         <item
             android:id="@+id/nav_night"
-            android:title="Ночной режим" />
+            android:icon="@drawable/ic_night"
+            android:title="@string/nav_night_mode" />
     </group>
 
-    <item android:title="Дополнительно">
+    <item android:title="@string/nav_additionally">
         <menu>
             <item
                 android:id="@+id/nav_about"
-                android:title="О нас" />
+                android:icon="@drawable/ic_about_us"
+                android:title="@string/nav_about_us" />
             <item
                 android:id="@+id/nav_rate"
-                android:title="Оценить" />
+                android:icon="@drawable/ic_rate"
+                android:title="@string/nav_rate" />
             <item
                 android:id="@+id/nav_share"
-                android:title="Поделиться" />
+                android:icon="@drawable/ic_share"
+                android:title="@string/nav_share" />
         </menu>
     </item>
 
