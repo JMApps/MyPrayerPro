@@ -71,7 +71,7 @@
             app:dotsCornerRadius="15dp"
             app:dotsSize="16dp"
             app:dotsSpacing="6dp"
-            app:dotsStrokeColor="@color/colorPrimary"
+            app:dotsStrokeColor="@color/main"
             app:dotsStrokeWidth="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
