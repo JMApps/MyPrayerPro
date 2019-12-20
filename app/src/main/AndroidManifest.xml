@@ -31,12 +31,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.ablution.AblutionActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/ContentTheme" />
         <activity
             android:name=".ui.supplication.SupplicationActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/ContentTheme" />
         <activity
             android:name=".ui.prayer.PrayerActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/ContentTheme" />
     </application>
 </manifest>
