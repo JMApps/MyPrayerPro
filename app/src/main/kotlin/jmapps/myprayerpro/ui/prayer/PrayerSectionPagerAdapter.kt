@@ -12,6 +12,6 @@ class PrayerSectionPagerAdapter(fragmentManager: FragmentManager) :
     }
 
     override fun getCount(): Int {
-        return 3
+        return 22
     }
 }
